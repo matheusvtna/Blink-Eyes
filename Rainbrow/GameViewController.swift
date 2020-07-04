@@ -62,11 +62,11 @@ class GameViewController: UIViewController, ARSessionDelegate {
         guard let rightBlinkEye = blendShapes[.eyeBlinkRight] as? Float else {return}
         guard let leftBlinkEye = blendShapes[.eyeBlinkLeft] as? Float else {return}
                 
-        if rightBlinkEye > 0.7 {
+        if leftBlinkEye > 0.7 {
             print("Down")
             gameScene.updatePlayer(state: .up)
         }
-        else if leftBlinkEye > 0.7 {
+        else if rightBlinkEye > 0.7 {
             print("Up")
             gameScene.updatePlayer(state: .down)
         }
