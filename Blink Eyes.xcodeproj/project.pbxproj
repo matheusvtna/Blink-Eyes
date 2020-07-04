@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E77EFAF24AF716300DC3BD8 /* Rainbrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainbrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E77EFAF24AF716300DC3BD8 /* Blink Eyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blink Eyes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E77EFB224AF716300DC3BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E77EFB424AF716300DC3BD8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3E77EFB824AF716300DC3BD8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -46,10 +46,10 @@
 		3E77EFBF24AF716400DC3BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E77EFC224AF716400DC3BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E77EFC424AF716400DC3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E77EFC924AF716400DC3BD8 /* RainbrowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbrowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E77EFC924AF716400DC3BD8 /* Blink EyesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blink EyesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E77EFCD24AF716400DC3BD8 /* RainbrowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbrowTests.swift; sourceTree = "<group>"; };
 		3E77EFCF24AF716400DC3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E77EFD424AF716400DC3BD8 /* RainbrowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbrowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E77EFD424AF716400DC3BD8 /* Blink EyesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blink EyesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E77EFD824AF716400DC3BD8 /* RainbrowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbrowUITests.swift; sourceTree = "<group>"; };
 		3E77EFDA24AF716400DC3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E77EFE624AF780200DC3BD8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		3E77EFA624AF716300DC3BD8 = {
 			isa = PBXGroup;
 			children = (
-				3E77EFB124AF716300DC3BD8 /* Rainbrow */,
-				3E77EFCC24AF716400DC3BD8 /* RainbrowTests */,
-				3E77EFD724AF716400DC3BD8 /* RainbrowUITests */,
+				3E77EFB124AF716300DC3BD8 /* Blink Eyes */,
+				3E77EFCC24AF716400DC3BD8 /* Blink EyesTests */,
+				3E77EFD724AF716400DC3BD8 /* Blink EyesUITests */,
 				3E77EFB024AF716300DC3BD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 		3E77EFB024AF716300DC3BD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E77EFAF24AF716300DC3BD8 /* Rainbrow.app */,
-				3E77EFC924AF716400DC3BD8 /* RainbrowTests.xctest */,
-				3E77EFD424AF716400DC3BD8 /* RainbrowUITests.xctest */,
+				3E77EFAF24AF716300DC3BD8 /* Blink Eyes.app */,
+				3E77EFC924AF716400DC3BD8 /* Blink EyesTests.xctest */,
+				3E77EFD424AF716400DC3BD8 /* Blink EyesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3E77EFB124AF716300DC3BD8 /* Rainbrow */ = {
+		3E77EFB124AF716300DC3BD8 /* Blink Eyes */ = {
 			isa = PBXGroup;
 			children = (
 				3E77EFB224AF716300DC3BD8 /* AppDelegate.swift */,
@@ -113,33 +113,33 @@
 				3E77EFC424AF716400DC3BD8 /* Info.plist */,
 				3E77EFE624AF780200DC3BD8 /* Player.swift */,
 			);
-			path = Rainbrow;
+			path = "Blink Eyes";
 			sourceTree = "<group>";
 		};
-		3E77EFCC24AF716400DC3BD8 /* RainbrowTests */ = {
+		3E77EFCC24AF716400DC3BD8 /* Blink EyesTests */ = {
 			isa = PBXGroup;
 			children = (
 				3E77EFCD24AF716400DC3BD8 /* RainbrowTests.swift */,
 				3E77EFCF24AF716400DC3BD8 /* Info.plist */,
 			);
-			path = RainbrowTests;
+			path = "Blink EyesTests";
 			sourceTree = "<group>";
 		};
-		3E77EFD724AF716400DC3BD8 /* RainbrowUITests */ = {
+		3E77EFD724AF716400DC3BD8 /* Blink EyesUITests */ = {
 			isa = PBXGroup;
 			children = (
 				3E77EFD824AF716400DC3BD8 /* RainbrowUITests.swift */,
 				3E77EFDA24AF716400DC3BD8 /* Info.plist */,
 			);
-			path = RainbrowUITests;
+			path = "Blink EyesUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E77EFAE24AF716300DC3BD8 /* Rainbrow */ = {
+		3E77EFAE24AF716300DC3BD8 /* Blink Eyes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E77EFDD24AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Rainbrow" */;
+			buildConfigurationList = 3E77EFDD24AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Blink Eyes" */;
 			buildPhases = (
 				3E77EFAB24AF716300DC3BD8 /* Sources */,
 				3E77EFAC24AF716300DC3BD8 /* Frameworks */,
@@ -149,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = Rainbrow;
+			name = "Blink Eyes";
 			productName = Rainbrow;
-			productReference = 3E77EFAF24AF716300DC3BD8 /* Rainbrow.app */;
+			productReference = 3E77EFAF24AF716300DC3BD8 /* Blink Eyes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E77EFC824AF716400DC3BD8 /* RainbrowTests */ = {
+		3E77EFC824AF716400DC3BD8 /* Blink EyesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E77EFE024AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "RainbrowTests" */;
+			buildConfigurationList = 3E77EFE024AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Blink EyesTests" */;
 			buildPhases = (
 				3E77EFC524AF716400DC3BD8 /* Sources */,
 				3E77EFC624AF716400DC3BD8 /* Frameworks */,
@@ -167,14 +167,14 @@
 			dependencies = (
 				3E77EFCB24AF716400DC3BD8 /* PBXTargetDependency */,
 			);
-			name = RainbrowTests;
+			name = "Blink EyesTests";
 			productName = RainbrowTests;
-			productReference = 3E77EFC924AF716400DC3BD8 /* RainbrowTests.xctest */;
+			productReference = 3E77EFC924AF716400DC3BD8 /* Blink EyesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3E77EFD324AF716400DC3BD8 /* RainbrowUITests */ = {
+		3E77EFD324AF716400DC3BD8 /* Blink EyesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E77EFE324AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "RainbrowUITests" */;
+			buildConfigurationList = 3E77EFE324AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Blink EyesUITests" */;
 			buildPhases = (
 				3E77EFD024AF716400DC3BD8 /* Sources */,
 				3E77EFD124AF716400DC3BD8 /* Frameworks */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				3E77EFD624AF716400DC3BD8 /* PBXTargetDependency */,
 			);
-			name = RainbrowUITests;
+			name = "Blink EyesUITests";
 			productName = RainbrowUITests;
-			productReference = 3E77EFD424AF716400DC3BD8 /* RainbrowUITests.xctest */;
+			productReference = 3E77EFD424AF716400DC3BD8 /* Blink EyesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3E77EFAA24AF716300DC3BD8 /* Build configuration list for PBXProject "Rainbrow" */;
+			buildConfigurationList = 3E77EFAA24AF716300DC3BD8 /* Build configuration list for PBXProject "Blink Eyes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E77EFAE24AF716300DC3BD8 /* Rainbrow */,
-				3E77EFC824AF716400DC3BD8 /* RainbrowTests */,
-				3E77EFD324AF716400DC3BD8 /* RainbrowUITests */,
+				3E77EFAE24AF716300DC3BD8 /* Blink Eyes */,
+				3E77EFC824AF716400DC3BD8 /* Blink EyesTests */,
+				3E77EFD324AF716400DC3BD8 /* Blink EyesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		3E77EFCB24AF716400DC3BD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E77EFAE24AF716300DC3BD8 /* Rainbrow */;
+			target = 3E77EFAE24AF716300DC3BD8 /* Blink Eyes */;
 			targetProxy = 3E77EFCA24AF716400DC3BD8 /* PBXContainerItemProxy */;
 		};
 		3E77EFD624AF716400DC3BD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3E77EFAE24AF716300DC3BD8 /* Rainbrow */;
+			target = 3E77EFAE24AF716300DC3BD8 /* Blink Eyes */;
 			targetProxy = 3E77EFD524AF716400DC3BD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,12 +444,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTH34SW9QV;
-				INFOPLIST_FILE = Rainbrow/Info.plist;
+				INFOPLIST_FILE = "Blink Eyes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Developer-Academy.Rainbrow";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.Blink-Eyes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,12 +462,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTH34SW9QV;
-				INFOPLIST_FILE = Rainbrow/Info.plist;
+				INFOPLIST_FILE = "Blink Eyes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Developer-Academy.Rainbrow";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.Blink-Eyes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,7 +491,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainbrow.app/Rainbrow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blink Eyes.app/Blink Eyes";
 			};
 			name = Debug;
 		};
@@ -512,7 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainbrow.app/Rainbrow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blink Eyes.app/Blink Eyes";
 			};
 			name = Release;
 		};
@@ -557,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E77EFAA24AF716300DC3BD8 /* Build configuration list for PBXProject "Rainbrow" */ = {
+		3E77EFAA24AF716300DC3BD8 /* Build configuration list for PBXProject "Blink Eyes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E77EFDB24AF716400DC3BD8 /* Debug */,
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E77EFDD24AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Rainbrow" */ = {
+		3E77EFDD24AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Blink Eyes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E77EFDE24AF716400DC3BD8 /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E77EFE024AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "RainbrowTests" */ = {
+		3E77EFE024AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Blink EyesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E77EFE124AF716400DC3BD8 /* Debug */,
@@ -584,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E77EFE324AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "RainbrowUITests" */ = {
+		3E77EFE324AF716400DC3BD8 /* Build configuration list for PBXNativeTarget "Blink EyesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E77EFE424AF716400DC3BD8 /* Debug */,
