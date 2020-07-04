@@ -61,9 +61,23 @@ class GameViewController: UIViewController, ARSessionDelegate {
     
     func update(withFaceAnchor faceAnchor: ARFaceAnchor){
         var blendShapes:[ARFaceAnchor.BlendShapeLocation:Any] = faceAnchor.blendShapes
+       
+        guard let browInnerUp = blendShapes[.browInnerUp] as? Float else {return}
         
+        print("Face recognized")
         
-        
+        if browInnerUp > 0.5 {
+            print("Up")
+            gameScene.updatePlayer(state: .up)
+        }
+        else if browInnerUp < 0.025 {
+            print("Down")
+            gameScene.updatePlayer(state: .down)
+        }
+        else{
+            print("Neutral")
+            gameScene.updatePlayer(state: .neutral)
+        }
         
     }
 
