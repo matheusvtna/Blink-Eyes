@@ -1,6 +1,6 @@
 # RainbrowRun
 
-A game inspired on the App Store's game: Rainbrow and built following the (Brian Advent's tutorial)[https://www.youtube.com/watch?v=LuvfNhKFnag&list=PLY1P2_piiWEYjjumZztc_U4EYTpwx9mfe].  
+A game inspired on the App Store's game: Rainbrow and built following the [Brian Advent's tutorial](https://www.youtube.com/watch?v=LuvfNhKFnag&list=PLY1P2_piiWEYjjumZztc_U4EYTpwx9mfe).  
 
 ## Project
 
