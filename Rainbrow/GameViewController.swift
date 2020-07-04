@@ -21,12 +21,10 @@ class GameViewController: UIViewController, ARSessionDelegate {
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") as? GameScene {
-                // Set the scale mode to scale to fit the window
-                
                 gameScene = scene
-                
+                // Set the scale mode to scale to fit the window
                 gameScene.scaleMode = .aspectFill
-                
+            
                 // Present the scene
                 view.presentScene(gameScene)
             }
@@ -35,17 +33,16 @@ class GameViewController: UIViewController, ARSessionDelegate {
             
             view.showsFPS = true
             view.showsNodeCount = true
+            
+            session = ARSession()
+            session.delegate = self
         }
-        
-        session = ARSession()
-        session.delegate = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        guard ARFaceTrackingConfiguration.isSupported else { print("iPhone don't support it"); return }
+        guard ARFaceTrackingConfiguration.isSupported else {print("iPhone X required"); return}
         
         let configuration = ARFaceTrackingConfiguration()
         
@@ -53,24 +50,24 @@ class GameViewController: UIViewController, ARSessionDelegate {
         
     }
     
-    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
         if let faceAnchor = anchors.first as? ARFaceAnchor{
             update(withFaceAnchor: faceAnchor)
         }
     }
     
     func update(withFaceAnchor faceAnchor: ARFaceAnchor){
-        var blendShapes:[ARFaceAnchor.BlendShapeLocation:Any] = faceAnchor.blendShapes
+        let blendShapes:[ARFaceAnchor.BlendShapeLocation:Any] = faceAnchor.blendShapes
        
         guard let browInnerUp = blendShapes[.browInnerUp] as? Float else {return}
         
-        print("Face recognized")
+        print(browInnerUp)
         
         if browInnerUp > 0.5 {
             print("Up")
             gameScene.updatePlayer(state: .up)
         }
-        else if browInnerUp < 0.025 {
+        else if browInnerUp < 0.06 {
             print("Down")
             gameScene.updatePlayer(state: .down)
         }
@@ -80,7 +77,7 @@ class GameViewController: UIViewController, ARSessionDelegate {
         }
         
     }
-
+    
     override var shouldAutorotate: Bool {
         return true
     }
