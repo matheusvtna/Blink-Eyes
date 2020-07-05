@@ -25,6 +25,8 @@ class MenuViewController: UIViewController{
             
         }
         
+        score.text = String(Score.shared.highScore)
+        
     }
     
     @objc func handleTap(sender: UITapGestureRecognizer){

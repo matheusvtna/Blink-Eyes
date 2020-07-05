@@ -56,12 +56,16 @@ class GameScene: SKScene {
 
                     if direction != 0 {
                         self.generator.impactOccurred()
+                        
+                        print("Entrei com score ", Score.shared.highScore)
+                        Score.shared.addScore()
+                        Score.shared.trySaveHighScore()
+                        print("Saí com score ", Score.shared.highScore)
                     }
                 }
 
                 let sequence = SKAction.sequence([moveAction, moveEndedAction])
                 player.run(sequence)
-
             }
         }
     }

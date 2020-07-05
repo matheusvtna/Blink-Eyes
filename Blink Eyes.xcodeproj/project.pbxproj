@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5FD9D824B267C4001D9766 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FD9D724B267C4001D9766 /* Score.swift */; };
 		3E77EFB324AF716300DC3BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77EFB224AF716300DC3BD8 /* AppDelegate.swift */; };
 		3E77EFB524AF716300DC3BD8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3E77EFB424AF716300DC3BD8 /* GameScene.sks */; };
 		3E77EFB924AF716300DC3BD8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77EFB824AF716300DC3BD8 /* GameScene.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E5FD9D724B267C4001D9766 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		3E77EFAF24AF716300DC3BD8 /* Blink Eyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blink Eyes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E77EFB224AF716300DC3BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E77EFB424AF716300DC3BD8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				3E77EFC124AF716400DC3BD8 /* LaunchScreen.storyboard */,
 				3E77EFC424AF716400DC3BD8 /* Info.plist */,
 				3E77EFE624AF780200DC3BD8 /* Player.swift */,
+				3E5FD9D724B267C4001D9766 /* Score.swift */,
 			);
 			path = "Blink Eyes";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				3EBF2F2724B13D030035CE8E /* MenuViewController.swift in Sources */,
 				3E77EFB924AF716300DC3BD8 /* GameScene.swift in Sources */,
 				3E77EFBB24AF716300DC3BD8 /* GameViewController.swift in Sources */,
+				3E5FD9D824B267C4001D9766 /* Score.swift in Sources */,
 				3E77EFB324AF716300DC3BD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
