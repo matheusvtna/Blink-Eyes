@@ -18,9 +18,9 @@ class MenuViewController: UIViewController{
         
         self.view.addGestureRecognizer(tap)
         
-        UIImageView.animate(withDuration: 1.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
+        UIImageView.animate(withDuration: 0.9, delay: 0.0, options: [.repeat, .autoreverse], animations: {
             self.tapLabel.alpha = 0.3
-            self.tapLabel.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
+            self.tapLabel.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
         }) { _ in
             
         }
@@ -31,6 +31,7 @@ class MenuViewController: UIViewController{
     
     @objc func handleTap(sender: UITapGestureRecognizer){
         let game = storyboard?.instantiateViewController(identifier: "Game") as! GameViewController
+        game.modalPresentationStyle = .fullScreen
         self.present(game, animated: true, completion: nil)
     }
     
