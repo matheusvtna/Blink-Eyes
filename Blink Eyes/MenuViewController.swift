@@ -18,21 +18,37 @@ class MenuViewController: UIViewController{
         
         self.view.addGestureRecognizer(tap)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        score.text = String(Score.shared.highScore)
+    
         UIImageView.animate(withDuration: 0.9, delay: 0.0, options: [.repeat, .autoreverse], animations: {
             self.tapLabel.alpha = 0.3
-            self.tapLabel.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+            self.tapLabel.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            print("to animando")
         }) { _ in
             
         }
-        
-        score.text = String(Score.shared.highScore)
-        
     }
     
     @objc func handleTap(sender: UITapGestureRecognizer){
+        
+        removeAnimation()
+        
         let game = storyboard?.instantiateViewController(identifier: "Game") as! GameViewController
         game.modalPresentationStyle = .fullScreen
+        
         self.present(game, animated: true, completion: nil)
+    }
+    
+    func removeAnimation() {
+        self.score.layer.removeAllAnimations()
+        self.view.layer.removeAllAnimations()
+        self.view.layoutIfNeeded()
+        
     }
     
 }

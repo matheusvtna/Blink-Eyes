@@ -76,6 +76,9 @@ class GameScene: SKScene {
                 let sequence = SKAction.sequence([moveAction, moveEndedAction])
                 player.run(sequence)
             }
+            else{
+                print((playerNode?.position.x)!, (playerNode?.position.y)!)
+            }
         }
     }
 
@@ -91,18 +94,23 @@ class GameScene: SKScene {
         coin = true
         
         let randomInt = Int.random(in: 0..<6)
-        var yPosition: CGFloat = 0
+        var yPosition = 0
         
         switch randomInt {
         case 0:
-            yPosition = 213
-        case 1:
-            yPosition = 53
-        default:
             yPosition = 373
+        case 1:
+            yPosition = 213
+        default:
+            yPosition = 50
         }
         
-        coinNode?.position = CGPoint(x: self.frame.size.width/2, y: yPosition)
+        print((coinNode?.position.x)!, (coinNode?.position.y)!)
+        
+        let moveAction = SKAction.move(to: CGPoint(x: 0, y: yPosition), duration: 0.0)
+        coinNode?.run(moveAction)
+        
+        print((coinNode?.position.x)!, (coinNode?.position.y)!)
         
         print("Coin Created")
     }
